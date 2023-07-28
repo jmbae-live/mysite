@@ -30,8 +30,3 @@ def user_login(request):
 @login_required
 def dashboard(request):
     return render(request, 'account/dashboard.html', {'section': 'dashboard'})
-
-
-def user_logout(request):
-    logout(request)
-    return render(request, 'account/logged_out.html')
