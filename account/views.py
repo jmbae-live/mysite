@@ -11,6 +11,7 @@ class CustomLoginView(LoginView):
             return redirect('dashboard')
         return super().dispatch(request, *args, **kwargs)
 
+
 # Create your views here.
 @login_required
 def dashboard(request):
