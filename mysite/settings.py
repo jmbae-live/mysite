@@ -30,7 +30,8 @@ ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 SITE_ID = 1
 
 INSTALLED_APPS = [
-    'account.apps.AccountConfig',
+    "images.apps.ImagesConfig",
+    "account.apps.AccountConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -41,9 +42,9 @@ INSTALLED_APPS = [
     "taggit",
     "django.contrib.sites",
     "django.contrib.sitemaps",
-    'django.contrib.postgres',
-    'social_django',
-    'django_extensions',
+    "django.contrib.postgres",
+    "social_django",
+    "django_extensions",
 ]
 
 MIDDLEWARE = [
