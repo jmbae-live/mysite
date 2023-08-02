@@ -18,7 +18,6 @@ boxHtml = `
     <div class="images"></div>
 </div>
 `;
-console.log('boxHtml:', boxHtml);
 body.innerHTML += boxHtml;
 
 function bookmarkletLaunch() {
@@ -29,6 +28,13 @@ function bookmarkletLaunch() {
         .addEventListener('click', function () {
             bookmarklet.style.display = 'none';
         });
+    images = document.querySelectorAll('img[src$=".jpg"], img[src$=".jpeg"], img[src$=".png"]');
+    images.forEach(image => {
+        if(image.naturalWidth >= minWith && image.naturalHeight >= minHeight) {
+            var imageFound = document.createElement('img');
+            imageFound.src = image.src;
+            imagesFound.append(imageFound);
+        }
+    })
 }
-
 bookmarkletLaunch();
