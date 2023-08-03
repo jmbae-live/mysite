@@ -13,7 +13,7 @@
         var blockRequest = false;
         window.addEventListener('scroll', function (e) {
             var margin = document.body.clientHeight - window.innerHeight - 200;
-            if (window.pageYOffset > margin && !emptyPage && !blockRequest) {
+            if (window.scrollY > margin && !emptyPage && !blockRequest) {
                 blockRequest = true;
                 page += 1;
                 fetch('?images_only=1&page=' + page)
