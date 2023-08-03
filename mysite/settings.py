@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.postgres",
     "social_django",
     "django_extensions",
+    "easy_thumbnails",
 ]
 
 MIDDLEWARE = [
