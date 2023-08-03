@@ -9,5 +9,4 @@ pyOpenSSL==23.1.1
 requests==2.31.0
 easy_thumbnails==2.8.5
 django-taggit==4.0.0
-psycopg2==2.9.6
 markdown==3.4.4
