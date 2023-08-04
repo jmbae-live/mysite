@@ -28,8 +28,8 @@
 {% endblock content %}
 <script>
     {% block domready %}
-        var url = '{% url "user_follow" %}';
-        var options = {
+        const url = '{% url "user_follow" %}';
+        const options = {
             method: 'POST',
             headers: {'X-CSRFToken': csrftoken},
             mode: 'same-origin'
@@ -47,7 +47,6 @@
                 fetch(url, options)
                     .then(response => response.json())
                     .then(data => {
-                        console.log(data);
                         if (data['status'] === 'ok') {
                             var previousAction = followButton.dataset.action;
                             // toggle button text and data-action
