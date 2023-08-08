@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 SITE_ID = 1
 
 INSTALLED_APPS = [
+    "cart.apps.CartConfig",
     "shop.apps.ShopConfig",
     "actions.apps.ActionsConfig",
     "images.apps.ImagesConfig",
