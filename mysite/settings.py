@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 SITE_ID = 1
 
 INSTALLED_APPS = [
+    "payment.apps.PaymentConfig",
     "orders.apps.OrdersConfig",
     "cart.apps.CartConfig",
     "shop.apps.ShopConfig",
@@ -202,3 +203,7 @@ REDIS_PORT = 6379
 REDIS_DB = 0
 
 CART_SESSION_ID = 'cart'
+
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51NDpRJJinXpHIPsErkhbbskGYZltQGnig4OTsxAuRcrWPXCNvyI6Dc8ApCNL4ciBQz1LhIT76fingitKdFTdjztU00zgfNNsgk'
+STRIPE_SECRET_KEY = 'sk_test_51NDpRJJinXpHIPsEd1TV46fvAOsK1wyU4ZDgX0bKPzOyqgvqQhhes8e3qhGCovhFX6a1UIW5jq5D3taGbqRgeoVi00NhNW5otY'
+STRIPE_API_VERSION = '2022-11-15'
