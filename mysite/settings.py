@@ -61,6 +61,7 @@ MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -122,7 +123,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "en"
 
 TIME_ZONE = "UTC"
 
@@ -213,3 +214,12 @@ STRIPE_API_VERSION = '2022-11-15'
 CELERY_TASK_ALWAYS_EAGER = True
 
 STRIPE_WEBHOOK_SECRET = 'whsec_4390fef1aabac71ea264c29b82beb12d0a90480c94a8319f303d590e0acf3dd1'
+
+LANGUAGES = [
+    ('en', 'English'),
+    ('ko', 'Korean'),
+]
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
