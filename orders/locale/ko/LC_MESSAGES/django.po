@@ -19,36 +19,36 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 #: orders/models.py:13
 msgid "first name"
-msgstr ""
+msgstr "이름"
 
 #: orders/models.py:14
 msgid "last name"
-msgstr ""
+msgstr "성"
 
 #: orders/models.py:15
 msgid "e-mail"
-msgstr ""
+msgstr "이메일"
 
 #: orders/models.py:16
 msgid "address"
-msgstr ""
+msgstr "주소"
 
 #: orders/models.py:17
 msgid "postal code"
-msgstr ""
+msgstr "우편번호"
 
 #: orders/models.py:18
 msgid "city"
-msgstr ""
+msgstr "도시"
 
 #: orders/templates/orders/order/create.html:4
 #: orders/templates/orders/order/create.html:7
 msgid "Checkout"
-msgstr ""
+msgstr "체크아웃"
 
 #: orders/templates/orders/order/create.html:9
 msgid "Your order"
-msgstr ""
+msgstr "주문 정보"
 
 #: orders/templates/orders/order/create.html:19
 #, python-format
@@ -57,11 +57,14 @@ msgid ""
 "                        \"%(code)s\" (%(discount)s%% off)\n"
 "                    "
 msgstr ""
+"\n"
+"                        \"%(code)s\"(%(discount)s%% 할인)\n"
+"                    "
 
 #: orders/templates/orders/order/create.html:26
 msgid "Total"
-msgstr ""
+msgstr "총"
 
 #: orders/templates/orders/order/create.html:30
 msgid "Place order"
-msgstr ""
+msgstr "주문하기"
