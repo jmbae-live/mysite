@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 13:44+0900\n"
-"PO-Revision-Date: 2023-08-21 13:44+0900\n"
+"POT-Creation-Date: 2023-08-21 14:40+0900\n"
+"PO-Revision-Date: 2023-08-21 14:41+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko\n"
@@ -57,6 +57,71 @@ msgstr "우편번호"
 #: orders/models.py:18
 msgid "city"
 msgstr "도시"
+
+#: orders/templates/orders/order/create.html:4
+#: orders/templates/orders/order/create.html:7
+msgid "Checkout"
+msgstr "체크아웃"
+
+#: orders/templates/orders/order/create.html:9
+msgid "Your order"
+msgstr "주문 정보"
+
+#: orders/templates/orders/order/create.html:19
+#, python-format
+msgid ""
+"\n"
+"                        \"%(code)s\" (%(discount)s%% off)\n"
+"                    "
+msgstr ""
+"\n"
+"                        \"%(code)s\"(%(discount)s%% 할인)\n"
+"                    "
+
+#: orders/templates/orders/order/create.html:26
+msgid "Total"
+msgstr "총"
+
+#: orders/templates/orders/order/create.html:30
+msgid "Place order"
+msgstr "주문하기"
+
+#: shop/templates/shop/base.html:10
+msgid "My shop"
+msgstr "내 상점"
+
+#: shop/templates/shop/base.html:21
+msgid "Your cart:"
+msgstr "장바구니:"
+
+#: shop/templates/shop/base.html:23
+#, python-format
+msgid ""
+"\n"
+"                        %(items)s item, $%(total)s\n"
+"                    "
+msgid_plural ""
+"\n"
+"                        %(items)s items, $%(total)s\n"
+"                    "
+msgstr[0] "\n"
+"                        %(items)s 개 상품, $%(total)s\n"
+"                    "
+msgstr[1] "\n"
+"                        %(items)s 개 상품들, $%(total)s\n"
+"                    "
+
+#: shop/templates/shop/base.html:30
+msgid "Your cart is empty"
+msgstr "장바구니가 비었습니다."
+
+#: shop/templates/shop/product/detail.html:20
+msgid "Add to cart"
+msgstr "장바구니 담기"
+
+#: shop/templates/shop/product/detail.html:25
+msgid "People who bought this also bought"
+msgstr "이 제품을 구매한 사람들은 다음 제품도 구매했습니다."
 
 #: venv/lib/python3.11/site-packages/click/_termui_impl.py:518
 #, python-brace-format
