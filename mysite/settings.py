@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 
 from django.urls import reverse_lazy
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -61,7 +62,7 @@ MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "django.middleware.locale.LocaleMiddleware",
+    "django.middleware.locale.LocaleMiddleware",  # 로컬라이즈 미들웨어 추가
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -123,7 +124,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = "en"
+LANGUAGE_CODE = "en"  # en-us 에서 변경
 
 TIME_ZONE = "UTC"
 
@@ -215,11 +216,12 @@ CELERY_TASK_ALWAYS_EAGER = True
 
 STRIPE_WEBHOOK_SECRET = 'whsec_4390fef1aabac71ea264c29b82beb12d0a90480c94a8319f303d590e0acf3dd1'
 
+# LANGUAGE_CODE 보다 아래 쪽에 정의
 LANGUAGES = [
-    ('en', 'English'),
-    ('ko', 'Korean'),
+    ('en', _('English')),
+    ('ko', _('Korean')),
 ]
 
 LOCALE_PATHS = [
-    BASE_DIR / 'locale',
+    BASE_DIR / 'locale',  # '/Users/dan/workspace/mysite/locale'
 ]
