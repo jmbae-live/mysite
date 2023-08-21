@@ -37,6 +37,7 @@ urlpatterns = [
     path('orders/', include('orders.urls', namespace='orders')),
     path('payment/', include('payment.urls', namespace='payment')),
     path('coupons/', include('coupons.urls', namespace='coupons')),
+    path('rosetta/', include('rosetta.urls')),
     path('__debug__/', include('debug_toolbar.urls')),
     path('', include('shop.urls', namespace='shop')),
 ]
