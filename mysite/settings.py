@@ -229,7 +229,7 @@ LOCALE_PATHS = [
 ]
 
 PARLER_LANGUAGES = {
-    None: (
+    1: (
         {'code': 'en'},
         {'code': 'ko'},
     ),
