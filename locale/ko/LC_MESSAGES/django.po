@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 14:55+0900\n"
-"PO-Revision-Date: 2023-08-21 06:49+0000\n"
+"POT-Creation-Date: 2023-08-22 10:03+0900\n"
+"PO-Revision-Date: 2023-08-22 01:08+0000\n"
 "Last-Translator:   <jmbae@live.com>\n"
 "Language-Team: \n"
 "Language: ko\n"
@@ -27,13 +27,43 @@ msgstr "수량"
 msgid "Coupon"
 msgstr "쿠폰"
 
-#: mysite/settings.py:221
+#: mysite/settings.py:222
 msgid "English"
 msgstr "영어"
 
-#: mysite/settings.py:222
+#: mysite/settings.py:223
 msgid "Korean"
 msgstr "한국어"
+
+#: mysite/urls.py:39
+msgid "cart/"
+msgstr "장바구니/"
+
+#: mysite/urls.py:40
+msgid "orders/"
+msgstr "주문/"
+
+#: mysite/urls.py:41
+msgid "payment/"
+msgstr "결제/"
+
+#: mysite/urls.py:42
+#, fuzzy
+#| msgid "Coupon"
+msgid "coupons/"
+msgstr "쿠폰"
+
+#: payment/urls.py:8
+msgid "process/"
+msgstr "진행/"
+
+#: payment/urls.py:9
+msgid "completed/"
+msgstr "완료/"
+
+#: payment/urls.py:10
+msgid "canceled/"
+msgstr "취소/"
 
 #: shop/templates/shop/base.html:10
 msgid "My shop"
