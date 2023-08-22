@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     "easy_thumbnails",
     "debug_toolbar",
     "rosetta",
+    "parler",
 ]
 
 MIDDLEWARE = [
@@ -226,3 +227,14 @@ LANGUAGES = [
 LOCALE_PATHS = [
     BASE_DIR / 'locale',  # '/Users/dan/workspace/mysite/locale'
 ]
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'ko'},
+    ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+    }
+}
